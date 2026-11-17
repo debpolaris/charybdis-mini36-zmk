@@ -10,10 +10,25 @@ Tag: `v1.0.0` — `https://github.com/<owner>/charybdis-mini36-zmk/releases/tag/
 | --- | --- | --- |
 | `zmk-workspace-src.tar.gz` | 310 MiB | `zephyr/`(v3.5.0+zmk-fixes 포크), `modules/`(west 모듈 37종), `zmk/`(v0.3), `zmk-pmw3610-driver/`(main) — `.git` 제외, 잠금 커밋의 작업 트리 그대로 |
 | `zephyr-sdk-0.16.5-arm-zephyr-eabi.tar.gz` | 234 MiB | 설치된 Zephyr SDK 0.16.5 (`arm-zephyr-eabi` 툴체인) |
-| `hosttools-dtc.tar.gz` | 49 KiB | SDK hosttools에서 꺼낸 `dtc` 1.6.0 바이너리 |
+| `hosttools-dtc.tar.gz` | 49 KiB | SDK hosttools에서 꺼낸 `dtc` 1.6.0 바이너리 (ELF interpreter를 `/lib64/ld-linux-x86-64.so.2`로 재배치) |
 
 `SHA256SUMS.txt` 가 세 파일의 해시를 고정합니다. `restore.sh` 는 다운로드 후 반드시
 검증을 수행합니다.
+
+## hosttools `dtc` 의 interpreter 재배치
+
+SDK hosttools는 Yocto nativesdk 바이너리라서 ELF interpreter에 **relocate 당시의 절대
+경로**가 그대로 박혀 있습니다(`.../hosttools/sysroots/x86_64-pokysdk-linux/lib/ld-2.27.so`).
+그 경로는 아카이브에 들어 있지 않으므로, 원본 바이너리는 그 머신을 벗어나면
+`exec` 자체가 `ENOENT`로 실패합니다. CMake는 이를 `dts.cmake:366` 의
+`command failed with return code: no such file or directory` 로만 보여주기 때문에
+원인을 찾기 어렵습니다.
+
+보관하는 사본은 `patchelf --set-interpreter /lib64/ld-linux-x86-64.so.2` 로 시스템
+loader를 가리키게 다시 만들었고, 같은 `zephyr.dts` 를 넣고 돌린 산출물이 원본과
+바이트 단위로 일치하는지 확인했습니다(`restore.sh` 가 해제 후 `dtc --version` 으로
+미리 점검합니다). SDK 툴체인 아카이브의 54개 ELF는 조사 결과 절대 경로 의존성이 0개라
+그대로 보관합니다.
 
 ## 평면 매니페스트를 쓰는 이유
 

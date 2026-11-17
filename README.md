@@ -41,8 +41,7 @@ ATTRIBUTION.md              원저작자·라이선스
 ## 펌웨어 올리기
 
 1. `nice_nano_v2`를 PC에 연결한 뒤 리셋 버튼을 두 번 눌러 부트로더(BOOTLDR) 모드로 진입.
-2. `nice_nano_v2`를 부트로더 모드로 진입시킨 뒤 uf2를 `NANOBOOT` 드라이브에 복사.
-   한 번에 하나씩만 연결하는 편이 안전합니다.
+2. uf2를 `NANOBOOT` 드라이브에 복사. 한 번에 하나씩만 연결하는 편이 안전합니다.
    - 왼쪽: `firmware/rebuilt/zmk.left.uf2`
    - 오른쪽: `firmware/rebuilt/zmk.right.uf2`
    - 설정 초기화가 필요할 때만: `firmware/rebuilt/zmk.reset.uf2`
@@ -72,7 +71,12 @@ cd charybdis-mini36-zmk
   `manifest.path=vendor` 가 깨진 것입니다. `restore.sh` 를 다시 실행하세요.
 
 GitHub Actions도 같은 경로를 씁니다(`.github/workflows/build.yml`): Release 자산을
-내려받아 `config/`로 빌드하고 산출물을 artefact로 올립니다.
+내려받아 `config/`로 빌드하고 산출물을 artefact로 올립니다. 마지막 단계가 빨간불이면
+`config/` 은 바뀌었는데 `firmware/rebuilt/` 의 uf2 는 그대로인 상태입니다 — 빌드를
+다시 돌리고 산출물을 갱신해 커밋하면 됩니다.
+
+`config/west.yml` 은 업스트림(zmkfirmware) 방식으로 같이 쓸 수 있게 남겨둔 매니페스트이고,
+재현 빌드가 실제로 쓰는 잠금 매니페스트는 `vendor/manifest.lock.yml` 입니다.
 
 ## 설정을 바꿨을 때
 

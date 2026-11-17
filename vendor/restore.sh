@@ -48,7 +48,9 @@ for asset in $(awk '{print $2}' "$HERE/vendor/SHA256SUMS.txt"); do
     echo "cached $asset"
   else
     echo "fetch  $asset"
-    curl -fL --retry 3 -o "$asset" "$BASE/$asset"
+    # GitHub's asset CDN occasionally resets the connection mid-download;
+    # --retry-all-errors covers those, not just HTTP 5xx.
+    curl -fL --retry 5 --retry-delay 3 --retry-all-errors -o "$asset" "$BASE/$asset"
   fi
 done
 
@@ -60,6 +62,17 @@ tar -xf zmk-workspace-src.tar.gz
 tar -xf zephyr-sdk-0.16.5-arm-zephyr-eabi.tar.gz
 mkdir -p hosttools
 tar -xf hosttools-dtc.tar.gz -C hosttools
+
+# The SDK's dtc ships as a Yocto nativesdk binary, which hard-codes the ELF
+# interpreter of whichever directory it was relocated into. The archived copy
+# was rewritten to /lib64/ld-linux-x86-64.so.2 so it runs from any prefix; if
+# that ever regresses CMake only says "no such file or directory" much later.
+DTC_BIN="$DEST/hosttools/sysroots/x86_64-pokysdk-linux/usr/bin/dtc"
+if ! "$DTC_BIN" --version >/dev/null 2>&1; then
+  echo "hosttools dtc is not executable here: $DTC_BIN" >&2
+  "$DTC_BIN" --version >&2 || true
+  exit 1
+fi
 
 echo "=== workspace layout ==="
 mkdir -p .west vendor
