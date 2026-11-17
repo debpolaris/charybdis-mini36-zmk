@@ -1,2 +1,0 @@
-e79ffbc90283898107dee45b623adbc1ea17b4a9d56d8a7b4d0affffa54e2020  zmk.left.uf2
-08e6b5205bccbd5cd480bd641f3cff993530d1270a3bfd6c39de9a1496ed4b2f  zmk.right.uf2
