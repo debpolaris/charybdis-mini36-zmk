@@ -1,0 +1,51 @@
+name: Build firmware
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'config/**'
+      - 'vendor/**'
+      - '.github/workflows/build.yml'
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  firmware:
+    runs-on: ubuntu-24.04
+    env:
+      OWNER: ${{ github.repository_owner }}
+      REPO_NAME: ${{ github.event.repository.name }}
+      TAG: v1.0.0
+      WORKSPACE: ${{ github.workspace }}/ws
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      # Same two scripts that produced firmware/rebuilt/ locally.
+      - name: Restore vendored workspace
+        run: ./vendor/restore.sh "$WORKSPACE"
+
+      - name: Build left / right / reset
+        run: ./vendor/build.sh "$WORKSPACE"
+
+      - name: Fail if the result is not bit-identical to the committed firmware
+        run: |
+          cd "$WORKSPACE"
+          sha256sum zmk.left.uf2 zmk.right.uf2 zmk.reset.uf2 > actual.txt
+          ( cd "$GITHUB_WORKSPACE/firmware/rebuilt" \
+            && sha256sum zmk.left.uf2 zmk.right.uf2 zmk.reset.uf2 ) > expected.txt
+          diff actual.txt expected.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: firmware
+          path: |
+            ws/zmk.left.uf2
+            ws/zmk.right.uf2
+            ws/zmk.reset.uf2

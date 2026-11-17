@@ -1,0 +1,3 @@
+e13eb4f4ec016562cbb7591a5d8cc521e8d9368ab6b0e4e31c5d717f963694a7  hosttools-dtc.tar.gz
+dca43a4611b62c71794c6d697f314987d2527d3692cbd0029eccfef4db9d02e2  zephyr-sdk-0.16.5-arm-zephyr-eabi.tar.gz
+79df0fbcfcf4f4dc84c424a04a6b69ce045abe8ed421725ad6a5a9b3228026cf  zmk-workspace-src.tar.gz

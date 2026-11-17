@@ -1,0 +1,20 @@
+# build artifacts
+build/
+*.uf2
+!firmware/**/*.uf2
+
+# local tooling
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# vendored archives are Release assets, not tree content
+vendor/*.tar.gz
+vendor/*.bundle
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+*.swp

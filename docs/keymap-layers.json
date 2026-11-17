@@ -1,0 +1,2048 @@
+[
+ {
+  "label": "Base",
+  "keys": [
+   {
+    "beh": "cpps",
+    "main": "Copy",
+    "hold": "PrtSc",
+    "shift": "",
+    "kind": "holdtap",
+    "src": "&cpps PSCRN LC(INS)"
+   },
+   {
+    "beh": "kp",
+    "main": "Q",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp Q"
+   },
+   {
+    "beh": "kp",
+    "main": "W",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp W"
+   },
+   {
+    "beh": "kp",
+    "main": "E",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp E"
+   },
+   {
+    "beh": "kp",
+    "main": "R",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp R"
+   },
+   {
+    "beh": "kp",
+    "main": "T",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp T"
+   },
+   {
+    "beh": "kp",
+    "main": "Y",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp Y"
+   },
+   {
+    "beh": "kp",
+    "main": "U",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp U"
+   },
+   {
+    "beh": "kp",
+    "main": "I",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp I"
+   },
+   {
+    "beh": "kp",
+    "main": "O",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp O"
+   },
+   {
+    "beh": "kp",
+    "main": "P",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp P"
+   },
+   {
+    "beh": "del_cad",
+    "main": "Del",
+    "hold": "Ctrl+Alt+Del",
+    "shift": "",
+    "kind": "holdtap",
+    "src": "&del_cad 0 DEL"
+   },
+   {
+    "beh": "lang_tab",
+    "main": "한&영",
+    "hold": "Tab",
+    "shift": "",
+    "kind": "holdtap",
+    "src": "&lang_tab TAB 0"
+   },
+   {
+    "beh": "hml",
+    "main": "A",
+    "hold": "GUI",
+    "shift": "",
+    "kind": "hrm",
+    "src": "&hml LGUI A"
+   },
+   {
+    "beh": "hml",
+    "main": "S",
+    "hold": "ALT",
+    "shift": "",
+    "kind": "hrm",
+    "src": "&hml LALT S"
+   },
+   {
+    "beh": "hml",
+    "main": "D",
+    "hold": "CTRL",
+    "shift": "",
+    "kind": "hrm",
+    "src": "&hml LCTRL D"
+   },
+   {
+    "beh": "hml",
+    "main": "F",
+    "hold": "SHIFT",
+    "shift": "",
+    "kind": "hrm",
+    "src": "&hml LSHFT F"
+   },
+   {
+    "beh": "kp",
+    "main": "G",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp G"
+   },
+   {
+    "beh": "kp",
+    "main": "H",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp H"
+   },
+   {
+    "beh": "hmr",
+    "main": "J",
+    "hold": "SHIFT",
+    "shift": "",
+    "kind": "hrm",
+    "src": "&hmr LSHFT J"
+   },
+   {
+    "beh": "hmr",
+    "main": "K",
+    "hold": "CTRL",
+    "shift": "",
+    "kind": "hrm",
+    "src": "&hmr LCTRL K"
+   },
+   {
+    "beh": "hmr",
+    "main": "L",
+    "hold": "ALT",
+    "shift": "",
+    "kind": "hrm",
+    "src": "&hmr LALT L"
+   },
+   {
+    "beh": "hmr",
+    "main": ";",
+    "hold": "GUI",
+    "shift": "",
+    "kind": "hrm",
+    "src": "&hmr RGUI SEMI"
+   },
+   {
+    "beh": "kp",
+    "main": "'",
+    "hold": "",
+    "shift": "\"",
+    "kind": "key",
+    "src": "&kp APOS"
+   },
+   {
+    "beh": "caps_word",
+    "main": "CapsWord",
+    "hold": "",
+    "shift": "",
+    "kind": "util",
+    "src": "&caps_word"
+   },
+   {
+    "beh": "kp",
+    "main": "Z",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp Z"
+   },
+   {
+    "beh": "kp",
+    "main": "X",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp X"
+   },
+   {
+    "beh": "kp",
+    "main": "C",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C"
+   },
+   {
+    "beh": "kp",
+    "main": "V",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp V"
+   },
+   {
+    "beh": "kp",
+    "main": "B",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp B"
+   },
+   {
+    "beh": "kp",
+    "main": "N",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp N"
+   },
+   {
+    "beh": "kp",
+    "main": "M",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp M"
+   },
+   {
+    "beh": "kp",
+    "main": ",",
+    "hold": "",
+    "shift": "<",
+    "kind": "key",
+    "src": "&kp COMMA"
+   },
+   {
+    "beh": "kp",
+    "main": ".",
+    "hold": "",
+    "shift": ">",
+    "kind": "key",
+    "src": "&kp DOT"
+   },
+   {
+    "beh": "kp",
+    "main": "/",
+    "hold": "",
+    "shift": "?",
+    "kind": "key",
+    "src": "&kp FSLH"
+   },
+   {
+    "beh": "p_slash",
+    "main": "|",
+    "hold": "",
+    "shift": "\\",
+    "kind": "morph",
+    "src": "&p_slash"
+   },
+   {
+    "beh": "lt",
+    "main": "Esc",
+    "hold": "MO 2",
+    "shift": "",
+    "kind": "layer",
+    "src": "&lt 2 ESC"
+   },
+   {
+    "beh": "lt",
+    "main": "SPACE",
+    "hold": "MO 1",
+    "shift": "",
+    "kind": "layer",
+    "src": "&lt 1 SPACE"
+   },
+   {
+    "beh": "ctp",
+    "main": "Paste",
+    "hold": "CTRL",
+    "shift": "",
+    "kind": "holdtap",
+    "src": "&ctp LCTRL 0"
+   },
+   {
+    "beh": "lt",
+    "main": "Enter",
+    "hold": "MO 3",
+    "shift": "",
+    "kind": "layer",
+    "src": "&lt 3 RET"
+   },
+   {
+    "beh": "lt",
+    "main": "Bksp",
+    "hold": "MO 1",
+    "shift": "",
+    "kind": "layer",
+    "src": "&lt 1 BSPC"
+   },
+   {
+    "beh": "mo",
+    "main": "MO 3",
+    "hold": "",
+    "shift": "",
+    "kind": "layer",
+    "src": "&mo 3"
+   }
+  ]
+ },
+ {
+  "label": "Nav/Symbol",
+  "keys": [
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "kp",
+    "main": "1",
+    "hold": "",
+    "shift": "!",
+    "kind": "key",
+    "src": "&kp N1"
+   },
+   {
+    "beh": "kp",
+    "main": "2",
+    "hold": "",
+    "shift": "@",
+    "kind": "key",
+    "src": "&kp N2"
+   },
+   {
+    "beh": "kp",
+    "main": "3",
+    "hold": "",
+    "shift": "#",
+    "kind": "key",
+    "src": "&kp N3"
+   },
+   {
+    "beh": "kp",
+    "main": "4",
+    "hold": "",
+    "shift": "$",
+    "kind": "key",
+    "src": "&kp N4"
+   },
+   {
+    "beh": "kp",
+    "main": "5",
+    "hold": "",
+    "shift": "%",
+    "kind": "key",
+    "src": "&kp N5"
+   },
+   {
+    "beh": "kp",
+    "main": "6",
+    "hold": "",
+    "shift": "^",
+    "kind": "key",
+    "src": "&kp N6"
+   },
+   {
+    "beh": "kp",
+    "main": "7",
+    "hold": "",
+    "shift": "&",
+    "kind": "key",
+    "src": "&kp N7"
+   },
+   {
+    "beh": "kp",
+    "main": "8",
+    "hold": "",
+    "shift": "*",
+    "kind": "key",
+    "src": "&kp N8"
+   },
+   {
+    "beh": "kp",
+    "main": "9",
+    "hold": "",
+    "shift": "(",
+    "kind": "key",
+    "src": "&kp N9"
+   },
+   {
+    "beh": "kp",
+    "main": "0",
+    "hold": "",
+    "shift": ")",
+    "kind": "key",
+    "src": "&kp N0"
+   },
+   {
+    "beh": "kp",
+    "main": "Del",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp DEL"
+   },
+   {
+    "beh": "kp",
+    "main": "`",
+    "hold": "",
+    "shift": "~",
+    "kind": "key",
+    "src": "&kp GRAVE"
+   },
+   {
+    "beh": "kp",
+    "main": "{",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LBRC"
+   },
+   {
+    "beh": "kp",
+    "main": "}",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp RBRC"
+   },
+   {
+    "beh": "kp",
+    "main": "(",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LPAR"
+   },
+   {
+    "beh": "kp",
+    "main": ")",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp RPAR"
+   },
+   {
+    "beh": "eq_tilde",
+    "main": "=",
+    "hold": "",
+    "shift": "~",
+    "kind": "morph",
+    "src": "&eq_tilde"
+   },
+   {
+    "beh": "nav_hp",
+    "main": "←",
+    "hold": "Home",
+    "shift": "",
+    "kind": "holdtap",
+    "src": "&nav_hp HOME LEFT"
+   },
+   {
+    "beh": "nav_hp",
+    "main": "↓",
+    "hold": "PgDn",
+    "shift": "",
+    "kind": "holdtap",
+    "src": "&nav_hp PG_DN DOWN"
+   },
+   {
+    "beh": "nav_hp",
+    "main": "↑",
+    "hold": "PgUp",
+    "shift": "",
+    "kind": "holdtap",
+    "src": "&nav_hp PG_UP UP"
+   },
+   {
+    "beh": "nav_hp",
+    "main": "→",
+    "hold": "End",
+    "shift": "",
+    "kind": "holdtap",
+    "src": "&nav_hp END RIGHT"
+   },
+   {
+    "beh": "kp",
+    "main": "*",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp STAR"
+   },
+   {
+    "beh": "kp",
+    "main": "#",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp HASH"
+   },
+   {
+    "beh": "kp",
+    "main": "!",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp EXCL"
+   },
+   {
+    "beh": "kp",
+    "main": "[",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LBKT"
+   },
+   {
+    "beh": "kp",
+    "main": "]",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp RBKT"
+   },
+   {
+    "beh": "kp",
+    "main": "_",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp UNDER"
+   },
+   {
+    "beh": "kp",
+    "main": "-",
+    "hold": "",
+    "shift": "_",
+    "kind": "key",
+    "src": "&kp MINUS"
+   },
+   {
+    "beh": "kp",
+    "main": "+",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp PLUS"
+   },
+   {
+    "beh": "kp",
+    "main": "@",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp AT"
+   },
+   {
+    "beh": "kp",
+    "main": "$",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp DLLR"
+   },
+   {
+    "beh": "kp",
+    "main": "&",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp AMPS"
+   },
+   {
+    "beh": "kp",
+    "main": "%",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp PRCNT"
+   },
+   {
+    "beh": "kp",
+    "main": "^",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp CARET"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   }
+  ]
+ },
+ {
+  "label": "FN/MID/BT",
+  "keys": [
+   {
+    "beh": "kp",
+    "main": "F11",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F11"
+   },
+   {
+    "beh": "kp",
+    "main": "F1",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F1"
+   },
+   {
+    "beh": "kp",
+    "main": "F2",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F2"
+   },
+   {
+    "beh": "kp",
+    "main": "F3",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F3"
+   },
+   {
+    "beh": "kp",
+    "main": "F4",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F4"
+   },
+   {
+    "beh": "kp",
+    "main": "F5",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F5"
+   },
+   {
+    "beh": "kp",
+    "main": "F6",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F6"
+   },
+   {
+    "beh": "kp",
+    "main": "F7",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F7"
+   },
+   {
+    "beh": "kp",
+    "main": "F8",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F8"
+   },
+   {
+    "beh": "kp",
+    "main": "F9",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F9"
+   },
+   {
+    "beh": "kp",
+    "main": "F10",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F10"
+   },
+   {
+    "beh": "kp",
+    "main": "F12",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F12"
+   },
+   {
+    "beh": "out",
+    "main": "Out: BT/USB",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&out OUT_TOG"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "kp",
+    "main": "Mute",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C_MUTE"
+   },
+   {
+    "beh": "kp",
+    "main": "Play/Pause",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C_PP"
+   },
+   {
+    "beh": "kp",
+    "main": "Vol −",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C_VOL_DN"
+   },
+   {
+    "beh": "kp",
+    "main": "Vol +",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C_VOL_UP"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "bt",
+    "main": "BT 0",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&bt BT_SEL 0"
+   },
+   {
+    "beh": "bt",
+    "main": "BT 1",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&bt BT_SEL 1"
+   },
+   {
+    "beh": "bt",
+    "main": "BT 2",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&bt BT_SEL 2"
+   },
+   {
+    "beh": "bt",
+    "main": "BT 3",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&bt BT_SEL 3"
+   },
+   {
+    "beh": "bt",
+    "main": "BT 4",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&bt BT_SEL 4"
+   },
+   {
+    "beh": "kp",
+    "main": "Track ⏪",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C_PREV"
+   },
+   {
+    "beh": "kp",
+    "main": "Rew ⏪",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C_RW"
+   },
+   {
+    "beh": "kp",
+    "main": "Fast ⏩",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C_FF"
+   },
+   {
+    "beh": "kp",
+    "main": "Track ⏩",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp C_NEXT"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "bootloader",
+    "main": "Bootloader",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&bootloader"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "bt",
+    "main": "Clear all",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&bt BT_CLR_ALL"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "bt",
+    "main": "Clear BT",
+    "hold": "",
+    "shift": "",
+    "kind": "bt",
+    "src": "&bt BT_CLR"
+   }
+  ]
+ },
+ {
+  "label": "AutoMouse",
+  "keys": [
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "kp",
+    "main": "F2",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F2"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+W",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(W)"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+Shift+T",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(LS(T))"
+   },
+   {
+    "beh": "kp",
+    "main": "F5",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F5"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+T",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(T)"
+   },
+   {
+    "beh": "mkp",
+    "main": "Left",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp LCLK"
+   },
+   {
+    "beh": "mo",
+    "main": "MO 5",
+    "hold": "",
+    "shift": "",
+    "kind": "layer",
+    "src": "&mo 5"
+   },
+   {
+    "beh": "mo",
+    "main": "MO 4",
+    "hold": "",
+    "shift": "",
+    "kind": "layer",
+    "src": "&mo 4"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "mkp",
+    "main": "Forward",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MB5"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "mkp",
+    "main": "Middle",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MCLK"
+   },
+   {
+    "beh": "mkp",
+    "main": "Right",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp RCLK"
+   },
+   {
+    "beh": "mo",
+    "main": "MO 5",
+    "hold": "",
+    "shift": "",
+    "kind": "layer",
+    "src": "&mo 5"
+   },
+   {
+    "beh": "mkp",
+    "main": "Left",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp LCLK"
+   },
+   {
+    "beh": "mkp",
+    "main": "Back",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MB4"
+   },
+   {
+    "beh": "mkp",
+    "main": "Left",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp LCLK"
+   },
+   {
+    "beh": "mkp",
+    "main": "Right",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp RCLK"
+   },
+   {
+    "beh": "mkp",
+    "main": "Middle",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MCLK"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "mkp",
+    "main": "Back",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MB4"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+Shift+Tab",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(LS(TAB))"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+Tab",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(TAB)"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+Shift+V",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(LS(V))"
+   },
+   {
+    "beh": "mkp",
+    "main": "Forward",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MB5"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "kp",
+    "main": "L-Sh",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LSHFT"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   }
+  ]
+ },
+ {
+  "label": "SlowMouse",
+  "keys": [
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "kp",
+    "main": "F2",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F2"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+W",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(W)"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+Shift+T",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(LS(T))"
+   },
+   {
+    "beh": "kp",
+    "main": "F5",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp F5"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+T",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(T)"
+   },
+   {
+    "beh": "mkp",
+    "main": "Left",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp LCLK"
+   },
+   {
+    "beh": "mo",
+    "main": "MO 5",
+    "hold": "",
+    "shift": "",
+    "kind": "layer",
+    "src": "&mo 5"
+   },
+   {
+    "beh": "mo",
+    "main": "MO 4",
+    "hold": "",
+    "shift": "",
+    "kind": "layer",
+    "src": "&mo 4"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "mkp",
+    "main": "Forward",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MB5"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "mkp",
+    "main": "Middle",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MCLK"
+   },
+   {
+    "beh": "mkp",
+    "main": "Right",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp RCLK"
+   },
+   {
+    "beh": "mo",
+    "main": "MO 5",
+    "hold": "",
+    "shift": "",
+    "kind": "layer",
+    "src": "&mo 5"
+   },
+   {
+    "beh": "mkp",
+    "main": "Left",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp LCLK"
+   },
+   {
+    "beh": "mkp",
+    "main": "Back",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MB4"
+   },
+   {
+    "beh": "mkp",
+    "main": "Left",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp LCLK"
+   },
+   {
+    "beh": "mkp",
+    "main": "Right",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp RCLK"
+   },
+   {
+    "beh": "mkp",
+    "main": "Middle",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MCLK"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "mkp",
+    "main": "Back",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MB4"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+Shift+Tab",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(LS(TAB))"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+Tab",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(TAB)"
+   },
+   {
+    "beh": "kp",
+    "main": "Ctrl+Shift+V",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LC(LS(V))"
+   },
+   {
+    "beh": "mkp",
+    "main": "Forward",
+    "hold": "",
+    "shift": "",
+    "kind": "mouse",
+    "src": "&mkp MB5"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "none",
+    "main": "",
+    "hold": "",
+    "shift": "",
+    "kind": "none",
+    "src": "&none"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "kp",
+    "main": "L-Sh",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp LSHFT"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   }
+  ]
+ },
+ {
+  "label": "ScrollOnly",
+  "keys": [
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   },
+   {
+    "beh": "trans",
+    "main": "trans",
+    "hold": "",
+    "shift": "",
+    "kind": "trans",
+    "src": "&trans"
+   }
+  ]
+ }
+]
