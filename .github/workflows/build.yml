@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.13'
 
-      # Same two scripts that produced firmware/rebuilt/ locally.
+      # Same two scripts that produced firmware/ locally.
       - name: Restore vendored workspace
         run: ./vendor/restore.sh "$WORKSPACE"
 
@@ -38,7 +38,7 @@ jobs:
         run: |
           cd "$WORKSPACE"
           sha256sum zmk.left.uf2 zmk.right.uf2 zmk.reset.uf2 > actual.txt
-          ( cd "$GITHUB_WORKSPACE/firmware/rebuilt" \
+          ( cd "$GITHUB_WORKSPACE/firmware" \
             && sha256sum zmk.left.uf2 zmk.right.uf2 zmk.reset.uf2 ) > expected.txt
           diff actual.txt expected.txt
 

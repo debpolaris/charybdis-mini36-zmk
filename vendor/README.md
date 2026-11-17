@@ -2,7 +2,7 @@
 
 이 디렉터리의 스크립트가 받아 쓰는 아카이브는 저장소의 **Release 자산**입니다.
 소스 트리가 2GB를 넘어 git tree에 넣을 수 없고, fork를 만들지 않는 대신 압축본을
-そのまま 보유하는 방식입니다.
+그대로 보유하는 방식입니다.
 
 Tag: `v1.0.0` — `https://github.com/<owner>/charybdis-mini36-zmk/releases/tag/v1.0.0`
 
@@ -59,7 +59,7 @@ Zephyr은 부팅 배너 문자열로 `git describe --abbrev=12 --always` 결과�
 
 `build.sh` 는 `vendor/projects.lock.tsv` 에서 zephyr 잠금 커밋을 읽어 12자리
 prefix를 `-DBUILD_VERSION=` 으로 직접 넘깁니다. git이 있을 때와 같은 값이라
-`firmware/rebuilt/` 와 바이트 단위로 일치합니다(실측: left·right·reset 모두 MATCH).
+`firmware/` 와 바이트 단위로 일치합니다(실측: left·right·reset 모두 MATCH).
 
 ## PyPI
 

@@ -6,22 +6,13 @@ Charybdis mini36 (3x6 + 3x6, 42키, PMW3610 트랙볼, EC11 인코더 2개)용 Z
 
 키보드 이름은 `CONFIG_ZMK_KEYBOARD_NAME="V&Z-MINI36"` 입니다.
 
-## 검증 상태 (2026-11-17)
-
-| 항목 | 결과 |
-| --- | --- |
-| `firmware/rebuilt/` 3개 이미지 | 이 저장소의 `config/`로 WSL Debian에서 직접 빌드 |
-| `firmware/local-2026-05-13/` (기존 로컬 빌드) | `left`·`right` 모두 `rebuilt/`와 **SHA256 일치** → 설정이 실제 펌웨어와 동일 |
-| `vendor/restore.sh` + `build.sh` 로 재빌드 | left·right·reset **3개 모두** `firmware/rebuilt/`와 SHA256 일치 (2026-11-17 실측) |
-
-`reset` 이미지는 `settings_reset` 실드 빌드이며, 기존 백업본과 일치합니다.
+![Charybdis mini36](Charybdis-mini36.jpg)
 
 ## 저장소 구조
 
 ```
 config/                     실제 컴파일된 ZMK 설정 (keymap·conf·overlay·west.yml)
-firmware/rebuilt/           이번 작업에서 빌드한 zmk.{left,right,reset}.uf2 + SHA256SUMS.txt
-firmware/local-2026-05-13/  예전에 로컬에서 빌드해 두었던 uf2 (left/right) + SHA256SUMS.txt
+firmware/                   zmk.{left,right,reset}.uf2 + SHA256SUMS.txt (config/로 빌드한 결과)
 vendor/                     재현 빌드용 잠금 매니페스트·복원/빌드 스크립트·자산 해시
 docs/                       키맵 다이어그램 (png/html/json)
 tools/keymap_diagram.py     keymap 소스 → 키맵 다이어그램 생성기
@@ -42,9 +33,9 @@ ATTRIBUTION.md              원저작자·라이선스
 
 1. `nice_nano_v2`를 PC에 연결한 뒤 리셋 버튼을 두 번 눌러 부트로더(BOOTLDR) 모드로 진입.
 2. uf2를 `NANOBOOT` 드라이브에 복사. 한 번에 하나씩만 연결하는 편이 안전합니다.
-   - 왼쪽: `firmware/rebuilt/zmk.left.uf2`
-   - 오른쪽: `firmware/rebuilt/zmk.right.uf2`
-   - 설정 초기화가 필요할 때만: `firmware/rebuilt/zmk.reset.uf2`
+   - 왼쪽: `firmware/zmk.left.uf2`
+   - 오른쪽: `firmware/zmk.right.uf2`
+   - 설정 초기화가 필요할 때만: `firmware/zmk.reset.uf2`
 3. BT 페어링은 `FN/MID/BT` 레이어의 `BT 0`~`BT 4`, 해제/스왑은 같은 레이어 참조.
 
 ## 이 저장소만으로 다시 빌드하기
@@ -60,6 +51,10 @@ cd charybdis-mini36-zmk
 ./vendor/build.sh  ~/zmk-charybdis    # left/right/reset 3개 빌드 + sha256 출력
 ```
 
+사내 게이트웨이 탓에 자산 다운로드가 중간에 끊기는 환경이라면
+`CURL_CA=/경로/루트ca.crt ./vendor/restore.sh ~/zmk-charybdis` 처럼 루트 CA를
+지정하면 됩니다.
+
 `restore.sh` 는 clone URL에서 저장소 주인을 스스로 찾아내므로 소유자를 직접
 입력할 필요가 없습니다(`OWNER=` / `REPO_NAME=` 으로 덮어쓸 수도 있습니다).
 
@@ -72,7 +67,7 @@ cd charybdis-mini36-zmk
 
 GitHub Actions도 같은 경로를 씁니다(`.github/workflows/build.yml`): Release 자산을
 내려받아 `config/`로 빌드하고 산출물을 artefact로 올립니다. 마지막 단계가 빨간불이면
-`config/` 은 바뀌었는데 `firmware/rebuilt/` 의 uf2 는 그대로인 상태입니다 — 빌드를
+`config/` 은 바뀌었는데 `firmware/` 의 uf2 는 그대로인 상태입니다 — 빌드를
 다시 돌리고 산출물을 갱신해 커밋하면 됩니다.
 
 `config/west.yml` 은 업스트림(zmkfirmware) 방식으로 같이 쓸 수 있게 남겨둔 매니페스트이고,
@@ -95,9 +90,9 @@ cp docs/keymap-layers.html docs/keymap.html
 
 ## 자체 완결성의 범위
 
-- 지킨 것: 의존성 저장소(zmk·zephyr 포크·모듈·PMW3610 드라이버)와 컴파일러 SDK를
+- 의존성 저장소(zmk·zephyr 포크·모듈·PMW3610 드라이버)와 컴파일러 SDK를
   이 저장소의 Release 자산으로 보유. 업스트림이 삭제·비공개돼도 복원 가능.
-- 지키지 못한 것: 자산은 GitHub Release에 있으므로 **GitHub 저장소 자체가** 사라지면
+- 자산은 GitHub Release에 있으므로 **GitHub 저장소 자체가** 사라지면
   함께 사라집니다. fork를 만들지 않는 대신 이 저장소를 백업(클론 + 자산 사본)해 두세요.
 - PyPI(pip 패키지)는 GitHub 저장소가 아니라 고정 목록만 동봉했습니다(`vendor/pip.lock.txt`).
 

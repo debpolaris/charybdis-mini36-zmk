@@ -9,6 +9,7 @@
 #
 # Set ASSET_DIR=/path/to/archives to read the archives from disk instead of
 # downloading them.
+# Set CURL_CA=/path/to/ca.pem if a corporate TLS gateway breaks the download.
 set -euo pipefail
 
 OWNER="${OWNER:-}"
@@ -40,6 +41,8 @@ BASE="https://github.com/$OWNER/$REPO_NAME/releases/download/$TAG"
 mkdir -p "$DEST"
 cd "$DEST"
 
+if [ -n "${CURL_CA:-}" ]; then CURL_OPTS=(--cacert "$CURL_CA"); else CURL_OPTS=(); fi
+
 for asset in $(awk '{print $2}' "$HERE/vendor/SHA256SUMS.txt"); do
   if [ -n "${ASSET_DIR:-}" ]; then
     echo "copy   $asset"
@@ -48,9 +51,9 @@ for asset in $(awk '{print $2}' "$HERE/vendor/SHA256SUMS.txt"); do
     echo "cached $asset"
   else
     echo "fetch  $asset"
-    # GitHub's asset CDN occasionally resets the connection mid-download;
+    # The asset CDN occasionally resets the connection mid-download;
     # --retry-all-errors covers those, not just HTTP 5xx.
-    curl -fL --retry 5 --retry-delay 3 --retry-all-errors -o "$asset" "$BASE/$asset"
+    curl -fL --retry 5 --retry-delay 3 --retry-all-errors "${CURL_OPTS[@]}" -o "$asset" "$BASE/$asset"
   fi
 done
 
