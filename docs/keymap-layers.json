@@ -585,14 +585,6 @@
    },
    {
     "beh": "kp",
-    "main": "@",
-    "hold": "",
-    "shift": "",
-    "kind": "key",
-    "src": "&kp AT"
-   },
-   {
-    "beh": "kp",
     "main": "$",
     "hold": "",
     "shift": "",
@@ -606,6 +598,14 @@
     "shift": "",
     "kind": "key",
     "src": "&kp AMPS"
+   },
+   {
+    "beh": "kp",
+    "main": "@",
+    "hold": "",
+    "shift": "",
+    "kind": "key",
+    "src": "&kp AT"
    },
    {
     "beh": "kp",

@@ -34,14 +34,6 @@ jobs:
       - name: Build left / right / reset
         run: ./vendor/build.sh "$WORKSPACE"
 
-      - name: Fail if the result is not bit-identical to the committed firmware
-        run: |
-          cd "$WORKSPACE"
-          sha256sum zmk.left.uf2 zmk.right.uf2 zmk.reset.uf2 > actual.txt
-          ( cd "$GITHUB_WORKSPACE/firmware" \
-            && sha256sum zmk.left.uf2 zmk.right.uf2 zmk.reset.uf2 ) > expected.txt
-          diff actual.txt expected.txt
-
       - uses: actions/upload-artifact@v4
         with:
           name: firmware
@@ -49,3 +41,11 @@ jobs:
             ws/zmk.left.uf2
             ws/zmk.right.uf2
             ws/zmk.reset.uf2
+
+      - name: Fail if the result is not bit-identical to the committed firmware
+        run: |
+          cd "$WORKSPACE"
+          sha256sum zmk.left.uf2 zmk.right.uf2 zmk.reset.uf2 > actual.txt
+          ( cd "$GITHUB_WORKSPACE/firmware" \
+            && sha256sum zmk.left.uf2 zmk.right.uf2 zmk.reset.uf2 ) > expected.txt
+          diff actual.txt expected.txt
