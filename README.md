@@ -51,10 +51,6 @@ cd charybdis-mini36-zmk
 ./vendor/build.sh  ~/zmk-charybdis    # left/right/reset 3개 빌드 + sha256 출력
 ```
 
-사내 게이트웨이 탓에 자산 다운로드가 중간에 끊기는 환경이라면
-`CURL_CA=/경로/루트ca.crt ./vendor/restore.sh ~/zmk-charybdis` 처럼 루트 CA를
-지정하면 됩니다.
-
 `restore.sh` 는 clone URL에서 저장소 주인을 스스로 찾아내므로 소유자를 직접
 입력할 필요가 없습니다(`OWNER=` / `REPO_NAME=` 으로 덮어쓸 수도 있습니다).
 
