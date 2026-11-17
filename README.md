@@ -69,6 +69,19 @@ GitHub Actions도 같은 경로를 씁니다(`.github/workflows/build.yml`): Rel
 `config/west.yml` 은 업스트림(zmkfirmware) 방식으로 같이 쓸 수 있게 남겨둔 매니페스트이고,
 재현 빌드가 실제로 쓰는 잠금 매니페스트는 `vendor/manifest.lock.yml` 입니다.
 
+### 빌드 환경
+
+호스트는 x86_64 리눅스여야 합니다. 빌드 대상 펌웨어는 ARM(nRF52840)이지만, 컴파일을
+수행하는 툴체인과 `dtc`가 x86_64 바이너리로 동봉되어 있기 때문입니다.
+
+- x86_64 리눅스/WSL → 인텔·AMD·VM 무관 동작
+- ARM 리눅스(라즈베리파이, ARM 서버, Apple Silicon 네이티브 등) → 툴체인이 실행되지
+  않아 이 저장소 방식으로는 불가(qemu-user로 에뮬레이션하는 방법은 있지만 제공하지 않음)
+- Windows/macOS 네이티브 셸 → 불가, WSL 또는 x86_64 리눅스 VM 필요
+
+이 외에 호스트에서 필요한 것은 `git`과 `python3`(venv 포함, 3.8+)뿐입니다.
+나머지는 전부 Release 자산에서 가져옵니다.
+
 ## 설정을 바꿨을 때
 
 1. `config/charybdis.keymap`(또는 `config/boards/shields/charybdis/*`) 편집
