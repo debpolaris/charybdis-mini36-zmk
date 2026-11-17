@@ -193,10 +193,15 @@ def cell(k, pos):
     cls = ["key", k["kind"]]
     if k["kind"] == "hrm" or k["kind"] in ("holdtap",):
         cls.append("ht")
+    if pos >= 36:
+        cls.append("thumb")
+    if len(k["main"]) > 6:
+        cls.append("long")
     body = ""
     if k["shift"]:
         body += '<span class="shift">%s</span>' % html.escape(k["shift"])
-    body += '<span class="main">%s</span>' % (html.escape(k["main"]) or "&nbsp;")
+    main = html.escape(k["main"]).replace("+", "+<wbr>") or "&nbsp;"
+    body += '<span class="main">%s</span>' % main
     if k["hold"]:
         body += '<span class="hold">%s</span>' % html.escape(k["hold"])
     return '<div class="%s"><i class="pos">%d</i>%s</div>' % (" ".join(cls), pos, body)
@@ -208,31 +213,32 @@ def page(layers):
 <style>
  body{margin:0;padding:28px;background:#16181d;color:#e6e6e6;
       font-family:'Segoe UI',Roboto,'Malgun Gothic',sans-serif}
+ *{box-sizing:border-box}
  h1{font-size:20px;color:#7fd1c8;margin:0 0 4px}
  .sub{color:#8b93a1;font-size:12px;margin-bottom:22px}
- .layer{background:#20242c;border:1px solid #2c313b;border-radius:14px;
-        padding:20px 24px;margin-bottom:26px;width:max-content}
+ .layer-panel{background:#20242c;border:1px solid #2c313b;border-radius:14px;
+              padding:20px 24px;margin-bottom:26px;width:max-content}
  .ttl{font-size:15px;font-weight:700;color:#7fd1c8;border-bottom:1px solid #313846;
       padding-bottom:8px;margin-bottom:14px}
  .row{display:flex;gap:34px;justify-content:center;margin-bottom:7px}
  .grp{display:flex;gap:6px}
- .key{position:relative;width:60px;height:60px;border-radius:8px;background:#343a46;
-      display:flex;flex-direction:column;align-items:center;justify-content:center;
+ .key{position:relative;width:60px;height:60px;flex:0 0 60px;border-radius:8px;background:#343a46;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;
       font-size:11px;box-shadow:inset 0 1px 0 rgba(255,255,255,.07),0 2px 3px rgba(0,0,0,.5)}
- .main{font-size:14px;font-weight:700}
- .hold{font-size:10px;color:#f0c674;margin-top:2px}
+ .main{max-width:54px;font-size:14px;font-weight:700;line-height:1.1;text-align:center}
+ .key.long .main{font-size:10px}
+ .hold{max-width:54px;font-size:10px;line-height:1.1;color:#f0c674;margin-top:2px;text-align:center}
  .shift{position:absolute;top:3px;right:5px;font-size:10px;color:#ff9d7d;font-weight:700}
  .pos{position:absolute;bottom:2px;left:4px;font-size:8px;font-style:normal;color:#5c6472}
  .trans{opacity:.42;border:1px dashed #4a5260;background:#262b34}
  .none{opacity:.24;background:#20242c}
  .hrm{border:1px solid #f0c674}
- .thumb,.layer{background:#343a46}
- .key.thumb{background:#2f4a6d;border:1px solid #3d6ea3}
  .key.layer{background:#3d3350;border:1px solid #6a5a86}
  .key.mouse{border:1px solid #3fae6f;color:#bff0d0}
  .key.bt{border:1px solid #2d9cdb;color:#bfe6f7}
  .key.util,.key.morph,.key.holdtap{border:1px solid #b98ad9}
  .key.key{color:#e9edf3}
+ .key.thumb{background:#2f4a6d;border:1px solid #3d6ea3}
  .legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11px;color:#9aa3b1;margin:0 0 22px}
  .sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;
      vertical-align:-2px}
@@ -250,7 +256,7 @@ def page(layers):
 </div>"""]
     for lay in layers:
         keys = lay["keys"]
-        parts.append('<div class="layer"><div class="ttl">%s</div>' %
+        parts.append('<div class="layer-panel"><div class="ttl">%s</div>' %
                      html.escape(lay["label"] or "(unnamed)"))
         for r in range(3):
             lo, hi = r * 12, r * 12 + 6
