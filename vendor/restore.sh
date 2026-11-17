@@ -24,8 +24,8 @@ if [ -z "$OWNER" ] || [ -z "$REPO_NAME" ]; then
   slug="$(git -C "$HERE" remote get-url origin 2>/dev/null || true)"
   slug="${slug%.git}"
   case "$slug" in
-    *:/*) slug="${slug##*:}" ;;
-    *)    slug="${slug#*://}"; slug="${slug#*/}" ;;
+    *://*) slug="${slug#*://}"; slug="${slug#*/}" ;;  # https://host/owner/repo
+    *:*)   slug="${slug##*:}" ;;                      # git@host:owner/repo
   esac
   OWNER="${OWNER:-${slug%%/*}}"
   REPO_NAME="${REPO_NAME:-${slug##*/}}"
