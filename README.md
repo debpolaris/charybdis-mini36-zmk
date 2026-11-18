@@ -23,11 +23,13 @@ ATTRIBUTION.md              원저작자·라이선스
 
 - 원본 하드웨어 정의: Vzhao-L/zmk-for-charybdis (branch `Charybdis-mini36-Mod`, `97e9814`)
 - 내 설정: `charybdis.keymap`, `boards/shields/charybdis/charybdis_right.conf`,
-  `boards/shields/charybdis/charybdis_right.overlay` (2026-05-13 기준)
+  `boards/shields/charybdis/charybdis_right.overlay` (v1.1.0, 2026-11-18 기준)
 
-내 설정이 원본과 다른 주요 항목: 트랙볼 CPI 800 / snipe 200, `SCROLL_TICK=120`,
-`AUTOMOUSE_TIMEOUT_MS=950`, 레이어 6개(Base·Nav/Symbol·FN/MID/BT·AutoMouse·SlowMouse·ScrollOnly),
-홈러 홀드-탭 HRM(`hml`/`hmr`), 한영 전환·붙여넣기 매크로.
+내 설정이 원본과 다른 주요 항목: 트랙볼 CPI 600 / snipe 200, `SCROLL_TICK=120`,
+키 디바운스 10/15ms, 홈러 홀드-탭 HRM(`hml`/`hmr`, balanced 250ms),
+레이어 6개(Base·Nav/Symbol·FN/MID/BT·AutoMouse·SlowMouse·ScrollOnly),
+한영 전환·붙여넣기 매크로. 트랙볼 자동 마우스 진입(`automouse-layer`)과
+`AUTOMOUSE_TIMEOUT_MS`는 주석 처리되어 비활성입니다(AutoMouse는 수동 진입).
 
 ## 펌웨어 올리기
 
@@ -36,6 +38,9 @@ ATTRIBUTION.md              원저작자·라이선스
    - 왼쪽: `firmware/zmk.left.uf2`
    - 오른쪽: `firmware/zmk.right.uf2`
    - 설정 초기화가 필요할 때만: `firmware/zmk.reset.uf2`
+   - 키맵·디바운스처럼 공용 설정을 바꾸면 **양쪽 모두** 플래시합니다.
+     트랙볼(CPI·snipe·scroll) 설정은 오른쪽에만 있으므로 오른쪽만 플래시하면 됩니다.
+     `reset`은 BT 페어링 꼬임 등 저장 설정을 지워야 할 때만 쓰는 별도 이미지입니다.
 3. BT 페어링은 `FN/MID/BT` 레이어의 `BT 0`~`BT 4`, 해제/스왑은 같은 레이어 참조.
 
 ## 이 저장소만으로 다시 빌드하기
@@ -63,8 +68,12 @@ cd charybdis-mini36-zmk
 
 GitHub Actions도 같은 경로를 씁니다(`.github/workflows/build.yml`): Release 자산을
 내려받아 `config/`로 빌드하고 산출물을 artefact로 올립니다. 마지막 단계가 빨간불이면
-`config/` 은 바뀌었는데 `firmware/` 의 uf2 는 그대로인 상태입니다 — 빌드를
-다시 돌리고 산출물을 갱신해 커밋하면 됩니다.
+`config/` 은 바뀌었는데 `firmware/` 의 uf2 는 그대로인 상태입니다 — artefact는 게이트보다
+먼저 업로드되므로 실행이 빨간불이어도 새 uf2를 받을 수 있습니다. 산출물로
+`firmware/` uf2 3종과 `SHA256SUMS.txt`를 함께 갱신해 커밋하면 됩니다.
+게이트는 uf2끼리만 해시를 비교하므로 `SHA256SUMS.txt`를 빼먹으면 CI는 초록불이어도
+로컬 대조가 어긋납니다. `firmware/`만 갱신한 커밋은 CI를 트리거하지 않으니
+`workflow_dispatch`로 한 번 더 돌려 비트 일치를 확인하세요.
 
 `config/west.yml` 은 업스트림(zmkfirmware) 방식으로 같이 쓸 수 있게 남겨둔 매니페스트이고,
 재현 빌드가 실제로 쓰는 잠금 매니페스트는 `vendor/manifest.lock.yml` 입니다.
@@ -85,7 +94,8 @@ GitHub Actions도 같은 경로를 씁니다(`.github/workflows/build.yml`): Rel
 ## 설정을 바꿨을 때
 
 1. `config/charybdis.keymap`(또는 `config/boards/shields/charybdis/*`) 편집
-2. `./vendor/build.sh` 로 빌드 → 실제 컴파일되는 파일과 대조
+2. `./vendor/restore.sh` 재실행(워크스페이스의 `config/` 사본 동기화) 후
+   `./vendor/build.sh` 로 빌드 → 출력 sha256을 `firmware/SHA256SUMS.txt`와 대조
 3. 키맵 그림 재생성:
 
 ```bash
@@ -96,6 +106,9 @@ cp docs/keymap-layers.html docs/keymap.html
 그림이 필요하면 HTML을 브라우저로 열어 전체 페이지를 이미지로 저장하면 됩니다.
 생성기는 컴파일된 keymap을 직접 파싱하므로, 손으로 그린 그림처럼 실제 펌웨어와
 어긋날 수 없습니다.
+
+빌드 산출물이 확정되면 `firmware/` uf2 3종과 `SHA256SUMS.txt`를 갱신해 커밋하고,
+`workflow_dispatch`로 비트 일치를 재검증한 뒤 플래시합니다.
 
 ## 자체 완결성의 범위
 
