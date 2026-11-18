@@ -5,7 +5,7 @@
 - `keymap-layers.png` — Base / Nav·Symbol / FN·MID·BT / AutoMouse / SlowMouse / ScrollOnly 전체
 - `keymap-layers.html` — 같은 내용의 브라우저용 ( 확대·축소 가능 )
 - `keymap.html` — `keymap-layers.html` 의 사본(이 저장소의 진입점 이름)
-- `keymap-layers.json` — 위 그림의 원 데이터(키별 tap/hold/shift/설명)
+- `keymap-layers.json` — 위 그림의 원 데이터(키별 tap/hold/shift/아이콘/설명/레이어)
 
 그림은 `config/charybdis.keymap` 을 **파싱해서** 생성했습니다. 손으로 그린 키맵
 그림은 펌웨어와 어긋나도 티가 나지 않지만 이 생성기는 컴파일되는 파일에서 바로
@@ -18,10 +18,15 @@
 | 가운데 큰 글자 | 탭(짧게 누르기) |
 | 아래 금색 글자 | 홀드(길게 누르기) — home-row mod, 레이어 전환 |
 | 오른쪽 위 주황 | Shift 조합 결과 |
-| 왼쪽 아래 작은 숫자 | matrix 인덱스 (0–35 본문, 36–38 왼 엄지, 39–41 오른 엄지) |
+| 아이콘 아래 작은 글자 | 기능 설명 (마우스 클릭·미디어·BT·특수 키) |
+| 위쪽 작은 회색 글자 | 마우스 레이어 단축키 조합 (C=Ctrl, S=Shift) |
+| 왼쪽 위 작은 숫자 | matrix 인덱스 (0–35 본문, 36–38 왼 엄지, 39–41 오른 엄지) |
+
+레이어 전환 키는 `MO n` 대신 레이어 이름(Nav/Sym, FN/BT, AutoMouse, SlowMouse, Scroll)을
+표시합니다. 마우스 클릭은 세 칸 버튼 아이콘(■¦□¦□ 등)으로 어느 버튼인지 보여줍니다.
 
 테두리 색: 금색 = home-row hold-tap, 남색 = 엄지, 보라 = 레이어 전환, 초록 = 마우스,
-파랑 = BT/출력/부트로더, 자주 = 매크로·mod-morph.
+파랑 = BT/출력/부트로더, 자주 = 매크로·mod-morph·미디어.
 
 ## 다시 생성하기
 
@@ -35,7 +40,7 @@ PNG이 필요하면 `keymap-layers.html` 을 브라우저(Edge/Chrome)에서 열
 
 ```bash
 msedge.exe --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 \
-  --window-size=940,3300 --virtual-time-budget=8000 \
+  --window-size=940,2500 --virtual-time-budget=8000 \
   --screenshot="keymap-layers.png" "file:///절대경로/keymap-layers.html"
 ```
 

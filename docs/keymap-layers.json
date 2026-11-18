@@ -1,13 +1,21 @@
 [
  {
+  "idx": 0,
   "label": "Base",
+  "short": "Base",
+  "note": "",
   "keys": [
    {
     "beh": "cpps",
-    "main": "Copy",
+    "main": "",
     "hold": "PrtSc",
     "shift": "",
     "kind": "holdtap",
+    "icon": "⧉",
+    "caption": "Copy",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&cpps PSCRN LC(INS)"
    },
    {
@@ -16,6 +24,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "Q",
+    "layer": null,
     "src": "&kp Q"
    },
    {
@@ -24,6 +37,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "W",
+    "layer": null,
     "src": "&kp W"
    },
    {
@@ -32,6 +50,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "E",
+    "layer": null,
     "src": "&kp E"
    },
    {
@@ -40,6 +63,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "R",
+    "layer": null,
     "src": "&kp R"
    },
    {
@@ -48,6 +76,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "T",
+    "layer": null,
     "src": "&kp T"
    },
    {
@@ -56,6 +89,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "Y",
+    "layer": null,
     "src": "&kp Y"
    },
    {
@@ -64,6 +102,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "U",
+    "layer": null,
     "src": "&kp U"
    },
    {
@@ -72,6 +115,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "I",
+    "layer": null,
     "src": "&kp I"
    },
    {
@@ -80,6 +128,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "O",
+    "layer": null,
     "src": "&kp O"
    },
    {
@@ -88,22 +141,37 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "P",
+    "layer": null,
     "src": "&kp P"
    },
    {
     "beh": "del_cad",
-    "main": "Del",
+    "main": "",
     "hold": "Ctrl+Alt+Del",
     "shift": "",
     "kind": "holdtap",
+    "icon": "⌦",
+    "caption": "Del",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&del_cad 0 DEL"
    },
    {
     "beh": "lang_tab",
-    "main": "한&영",
+    "main": "",
     "hold": "Tab",
     "shift": "",
     "kind": "holdtap",
+    "icon": "🌐",
+    "caption": "한/영",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&lang_tab TAB 0"
    },
    {
@@ -112,6 +180,11 @@
     "hold": "GUI",
     "shift": "",
     "kind": "hrm",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&hml LGUI A"
    },
    {
@@ -120,6 +193,11 @@
     "hold": "ALT",
     "shift": "",
     "kind": "hrm",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&hml LALT S"
    },
    {
@@ -128,6 +206,11 @@
     "hold": "CTRL",
     "shift": "",
     "kind": "hrm",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&hml LCTRL D"
    },
    {
@@ -136,6 +219,11 @@
     "hold": "SHIFT",
     "shift": "",
     "kind": "hrm",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&hml LSHFT F"
    },
    {
@@ -144,6 +232,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "G",
+    "layer": null,
     "src": "&kp G"
    },
    {
@@ -152,6 +245,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "H",
+    "layer": null,
     "src": "&kp H"
    },
    {
@@ -160,6 +258,11 @@
     "hold": "SHIFT",
     "shift": "",
     "kind": "hrm",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&hmr LSHFT J"
    },
    {
@@ -168,6 +271,11 @@
     "hold": "CTRL",
     "shift": "",
     "kind": "hrm",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&hmr LCTRL K"
    },
    {
@@ -176,6 +284,11 @@
     "hold": "ALT",
     "shift": "",
     "kind": "hrm",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&hmr LALT L"
    },
    {
@@ -184,6 +297,11 @@
     "hold": "GUI",
     "shift": "",
     "kind": "hrm",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&hmr RGUI SEMI"
    },
    {
@@ -192,14 +310,24 @@
     "hold": "",
     "shift": "\"",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "APOS",
+    "layer": null,
     "src": "&kp APOS"
    },
    {
     "beh": "caps_word",
-    "main": "CapsWord",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "util",
+    "icon": "⇪",
+    "caption": "CapsWord",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&caps_word"
    },
    {
@@ -208,6 +336,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "Z",
+    "layer": null,
     "src": "&kp Z"
    },
    {
@@ -216,6 +349,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "X",
+    "layer": null,
     "src": "&kp X"
    },
    {
@@ -224,6 +362,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "C",
+    "layer": null,
     "src": "&kp C"
    },
    {
@@ -232,6 +375,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "V",
+    "layer": null,
     "src": "&kp V"
    },
    {
@@ -240,6 +388,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "B",
+    "layer": null,
     "src": "&kp B"
    },
    {
@@ -248,6 +401,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N",
+    "layer": null,
     "src": "&kp N"
    },
    {
@@ -256,6 +414,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "M",
+    "layer": null,
     "src": "&kp M"
    },
    {
@@ -264,6 +427,11 @@
     "hold": "",
     "shift": "<",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "COMMA",
+    "layer": null,
     "src": "&kp COMMA"
    },
    {
@@ -272,6 +440,11 @@
     "hold": "",
     "shift": ">",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "DOT",
+    "layer": null,
     "src": "&kp DOT"
    },
    {
@@ -280,6 +453,11 @@
     "hold": "",
     "shift": "?",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "FSLH",
+    "layer": null,
     "src": "&kp FSLH"
    },
    {
@@ -288,60 +466,98 @@
     "hold": "",
     "shift": "\\",
     "kind": "morph",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&p_slash"
    },
    {
     "beh": "lt",
     "main": "Esc",
-    "hold": "MO 2",
+    "hold": "FN/BT",
     "shift": "",
     "kind": "layer",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": 2,
     "src": "&lt 2 ESC"
    },
    {
     "beh": "lt",
     "main": "SPACE",
-    "hold": "MO 1",
+    "hold": "Nav/Sym",
     "shift": "",
     "kind": "layer",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": 1,
     "src": "&lt 1 SPACE"
    },
    {
     "beh": "ctp",
-    "main": "Paste",
+    "main": "",
     "hold": "CTRL",
     "shift": "",
     "kind": "holdtap",
+    "icon": "📋",
+    "caption": "Paste",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&ctp LCTRL 0"
    },
    {
     "beh": "lt",
     "main": "Enter",
-    "hold": "MO 3",
+    "hold": "AutoMouse",
     "shift": "",
     "kind": "layer",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": 3,
     "src": "&lt 3 RET"
    },
    {
     "beh": "lt",
     "main": "Bksp",
-    "hold": "MO 1",
+    "hold": "Nav/Sym",
     "shift": "",
     "kind": "layer",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": 1,
     "src": "&lt 1 BSPC"
    },
    {
     "beh": "mo",
-    "main": "MO 3",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "layer",
+    "icon": "▤",
+    "caption": "AutoMouse",
+    "combo": "",
+    "tok": "",
+    "layer": 3,
     "src": "&mo 3"
    }
   ]
  },
  {
+  "idx": 1,
   "label": "Nav/Symbol",
+  "short": "Nav/Sym",
+  "note": "",
   "keys": [
    {
     "beh": "trans",
@@ -349,6 +565,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -357,6 +578,11 @@
     "hold": "",
     "shift": "!",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N1",
+    "layer": null,
     "src": "&kp N1"
    },
    {
@@ -365,6 +591,11 @@
     "hold": "",
     "shift": "@",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N2",
+    "layer": null,
     "src": "&kp N2"
    },
    {
@@ -373,6 +604,11 @@
     "hold": "",
     "shift": "#",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N3",
+    "layer": null,
     "src": "&kp N3"
    },
    {
@@ -381,6 +617,11 @@
     "hold": "",
     "shift": "$",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N4",
+    "layer": null,
     "src": "&kp N4"
    },
    {
@@ -389,6 +630,11 @@
     "hold": "",
     "shift": "%",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N5",
+    "layer": null,
     "src": "&kp N5"
    },
    {
@@ -397,6 +643,11 @@
     "hold": "",
     "shift": "^",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N6",
+    "layer": null,
     "src": "&kp N6"
    },
    {
@@ -405,6 +656,11 @@
     "hold": "",
     "shift": "&",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N7",
+    "layer": null,
     "src": "&kp N7"
    },
    {
@@ -413,6 +669,11 @@
     "hold": "",
     "shift": "*",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N8",
+    "layer": null,
     "src": "&kp N8"
    },
    {
@@ -421,6 +682,11 @@
     "hold": "",
     "shift": "(",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N9",
+    "layer": null,
     "src": "&kp N9"
    },
    {
@@ -429,6 +695,11 @@
     "hold": "",
     "shift": ")",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "N0",
+    "layer": null,
     "src": "&kp N0"
    },
    {
@@ -437,6 +708,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "DEL",
+    "layer": null,
     "src": "&kp DEL"
    },
    {
@@ -445,6 +721,11 @@
     "hold": "",
     "shift": "~",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "GRAVE",
+    "layer": null,
     "src": "&kp GRAVE"
    },
    {
@@ -453,6 +734,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "LBRC",
+    "layer": null,
     "src": "&kp LBRC"
    },
    {
@@ -461,6 +747,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "RBRC",
+    "layer": null,
     "src": "&kp RBRC"
    },
    {
@@ -469,6 +760,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "LPAR",
+    "layer": null,
     "src": "&kp LPAR"
    },
    {
@@ -477,6 +773,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "RPAR",
+    "layer": null,
     "src": "&kp RPAR"
    },
    {
@@ -485,38 +786,63 @@
     "hold": "",
     "shift": "~",
     "kind": "morph",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&eq_tilde"
    },
    {
     "beh": "nav_hp",
-    "main": "←",
+    "main": "",
     "hold": "Home",
     "shift": "",
     "kind": "holdtap",
+    "icon": "←",
+    "caption": "Left",
+    "combo": "",
+    "tok": "LEFT",
+    "layer": null,
     "src": "&nav_hp HOME LEFT"
    },
    {
     "beh": "nav_hp",
-    "main": "↓",
+    "main": "",
     "hold": "PgDn",
     "shift": "",
     "kind": "holdtap",
+    "icon": "↓",
+    "caption": "Down",
+    "combo": "",
+    "tok": "DOWN",
+    "layer": null,
     "src": "&nav_hp PG_DN DOWN"
    },
    {
     "beh": "nav_hp",
-    "main": "↑",
+    "main": "",
     "hold": "PgUp",
     "shift": "",
     "kind": "holdtap",
+    "icon": "↑",
+    "caption": "Up",
+    "combo": "",
+    "tok": "UP",
+    "layer": null,
     "src": "&nav_hp PG_UP UP"
    },
    {
     "beh": "nav_hp",
-    "main": "→",
+    "main": "",
     "hold": "End",
     "shift": "",
     "kind": "holdtap",
+    "icon": "→",
+    "caption": "Right",
+    "combo": "",
+    "tok": "RIGHT",
+    "layer": null,
     "src": "&nav_hp END RIGHT"
    },
    {
@@ -525,6 +851,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "STAR",
+    "layer": null,
     "src": "&kp STAR"
    },
    {
@@ -533,6 +864,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "HASH",
+    "layer": null,
     "src": "&kp HASH"
    },
    {
@@ -541,6 +877,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "EXCL",
+    "layer": null,
     "src": "&kp EXCL"
    },
    {
@@ -549,6 +890,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "LBKT",
+    "layer": null,
     "src": "&kp LBKT"
    },
    {
@@ -557,6 +903,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "RBKT",
+    "layer": null,
     "src": "&kp RBKT"
    },
    {
@@ -565,6 +916,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "UNDER",
+    "layer": null,
     "src": "&kp UNDER"
    },
    {
@@ -573,6 +929,11 @@
     "hold": "",
     "shift": "_",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "MINUS",
+    "layer": null,
     "src": "&kp MINUS"
    },
    {
@@ -581,6 +942,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "PLUS",
+    "layer": null,
     "src": "&kp PLUS"
    },
    {
@@ -589,6 +955,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "DLLR",
+    "layer": null,
     "src": "&kp DLLR"
    },
    {
@@ -597,6 +968,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "AMPS",
+    "layer": null,
     "src": "&kp AMPS"
    },
    {
@@ -605,6 +981,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "AT",
+    "layer": null,
     "src": "&kp AT"
    },
    {
@@ -613,6 +994,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "PRCNT",
+    "layer": null,
     "src": "&kp PRCNT"
    },
    {
@@ -621,6 +1007,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "CARET",
+    "layer": null,
     "src": "&kp CARET"
    },
    {
@@ -629,6 +1020,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -637,6 +1033,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -645,6 +1046,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -653,6 +1059,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -661,6 +1072,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -669,6 +1085,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -677,12 +1098,20 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    }
   ]
  },
  {
+  "idx": 2,
   "label": "FN/MID/BT",
+  "short": "FN/BT",
+  "note": "",
   "keys": [
    {
     "beh": "kp",
@@ -690,6 +1119,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F11",
+    "layer": null,
     "src": "&kp F11"
    },
    {
@@ -698,6 +1132,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F1",
+    "layer": null,
     "src": "&kp F1"
    },
    {
@@ -706,6 +1145,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F2",
+    "layer": null,
     "src": "&kp F2"
    },
    {
@@ -714,6 +1158,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F3",
+    "layer": null,
     "src": "&kp F3"
    },
    {
@@ -722,6 +1171,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F4",
+    "layer": null,
     "src": "&kp F4"
    },
    {
@@ -730,6 +1184,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F5",
+    "layer": null,
     "src": "&kp F5"
    },
    {
@@ -738,6 +1197,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F6",
+    "layer": null,
     "src": "&kp F6"
    },
    {
@@ -746,6 +1210,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F7",
+    "layer": null,
     "src": "&kp F7"
    },
    {
@@ -754,6 +1223,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F8",
+    "layer": null,
     "src": "&kp F8"
    },
    {
@@ -762,6 +1236,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F9",
+    "layer": null,
     "src": "&kp F9"
    },
    {
@@ -770,6 +1249,11 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F10",
+    "layer": null,
     "src": "&kp F10"
    },
    {
@@ -778,14 +1262,24 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "F12",
+    "layer": null,
     "src": "&kp F12"
    },
    {
     "beh": "out",
-    "main": "Out: BT/USB",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "↹",
+    "caption": "BT/USB",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&out OUT_TOG"
    },
    {
@@ -794,6 +1288,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -802,6 +1301,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -810,6 +1314,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -818,6 +1327,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -826,38 +1340,63 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "kp",
-    "main": "Mute",
+    "main": "",
     "hold": "",
     "shift": "",
-    "kind": "key",
+    "kind": "media",
+    "icon": "🔇",
+    "caption": "Mute",
+    "combo": "",
+    "tok": "C_MUTE",
+    "layer": null,
     "src": "&kp C_MUTE"
    },
    {
     "beh": "kp",
-    "main": "Play/Pause",
+    "main": "",
     "hold": "",
     "shift": "",
-    "kind": "key",
+    "kind": "media",
+    "icon": "⏯",
+    "caption": "Play/Pause",
+    "combo": "",
+    "tok": "C_PP",
+    "layer": null,
     "src": "&kp C_PP"
    },
    {
     "beh": "kp",
-    "main": "Vol −",
+    "main": "",
     "hold": "",
     "shift": "",
-    "kind": "key",
+    "kind": "media",
+    "icon": "🔉",
+    "caption": "Vol −",
+    "combo": "",
+    "tok": "C_VOL_DN",
+    "layer": null,
     "src": "&kp C_VOL_DN"
    },
    {
     "beh": "kp",
-    "main": "Vol +",
+    "main": "",
     "hold": "",
     "shift": "",
-    "kind": "key",
+    "kind": "media",
+    "icon": "🔊",
+    "caption": "Vol +",
+    "combo": "",
+    "tok": "C_VOL_UP",
+    "layer": null,
     "src": "&kp C_VOL_UP"
    },
    {
@@ -866,6 +1405,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -874,6 +1418,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -882,78 +1431,128 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "bt",
-    "main": "BT 0",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "🔵",
+    "caption": "BT 0",
+    "combo": "",
+    "tok": "BT_SEL",
+    "layer": null,
     "src": "&bt BT_SEL 0"
    },
    {
     "beh": "bt",
-    "main": "BT 1",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "🔵",
+    "caption": "BT 1",
+    "combo": "",
+    "tok": "BT_SEL",
+    "layer": null,
     "src": "&bt BT_SEL 1"
    },
    {
     "beh": "bt",
-    "main": "BT 2",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "🔵",
+    "caption": "BT 2",
+    "combo": "",
+    "tok": "BT_SEL",
+    "layer": null,
     "src": "&bt BT_SEL 2"
    },
    {
     "beh": "bt",
-    "main": "BT 3",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "🔵",
+    "caption": "BT 3",
+    "combo": "",
+    "tok": "BT_SEL",
+    "layer": null,
     "src": "&bt BT_SEL 3"
    },
    {
     "beh": "bt",
-    "main": "BT 4",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "🔵",
+    "caption": "BT 4",
+    "combo": "",
+    "tok": "BT_SEL",
+    "layer": null,
     "src": "&bt BT_SEL 4"
    },
    {
     "beh": "kp",
-    "main": "Track ⏪",
+    "main": "",
     "hold": "",
     "shift": "",
-    "kind": "key",
+    "kind": "media",
+    "icon": "⏮",
+    "caption": "Prev",
+    "combo": "",
+    "tok": "C_PREV",
+    "layer": null,
     "src": "&kp C_PREV"
    },
    {
     "beh": "kp",
-    "main": "Rew ⏪",
+    "main": "",
     "hold": "",
     "shift": "",
-    "kind": "key",
+    "kind": "media",
+    "icon": "⏪",
+    "caption": "Rewind",
+    "combo": "",
+    "tok": "C_RW",
+    "layer": null,
     "src": "&kp C_RW"
    },
    {
     "beh": "kp",
-    "main": "Fast ⏩",
+    "main": "",
     "hold": "",
     "shift": "",
-    "kind": "key",
+    "kind": "media",
+    "icon": "⏩",
+    "caption": "Fast Fwd",
+    "combo": "",
+    "tok": "C_FF",
+    "layer": null,
     "src": "&kp C_FF"
    },
    {
     "beh": "kp",
-    "main": "Track ⏩",
+    "main": "",
     "hold": "",
     "shift": "",
-    "kind": "key",
+    "kind": "media",
+    "icon": "⏭",
+    "caption": "Next",
+    "combo": "",
+    "tok": "C_NEXT",
+    "layer": null,
     "src": "&kp C_NEXT"
    },
    {
@@ -962,14 +1561,24 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "bootloader",
-    "main": "Bootloader",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "⚙",
+    "caption": "Bootloader",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&bootloader"
    },
    {
@@ -978,6 +1587,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -986,14 +1600,24 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "bt",
-    "main": "Clear all",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "🔵✕✕",
+    "caption": "Clear All",
+    "combo": "",
+    "tok": "BT_CLR_ALL",
+    "layer": null,
     "src": "&bt BT_CLR_ALL"
    },
    {
@@ -1002,6 +1626,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1010,20 +1639,33 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "bt",
-    "main": "Clear BT",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "bt",
+    "icon": "🔵✕",
+    "caption": "Clear BT",
+    "combo": "",
+    "tok": "BT_CLR",
+    "layer": null,
     "src": "&bt BT_CLR"
    }
   ]
  },
  {
+  "idx": 3,
   "label": "AutoMouse",
+  "short": "AutoMouse",
+  "note": "마우스 클릭과 브라우저 단축키를 배치한 레이어입니다.",
   "keys": [
    {
     "beh": "trans",
@@ -1031,6 +1673,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1039,22 +1686,37 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "Rename",
+    "combo": "",
+    "tok": "F2",
+    "layer": null,
     "src": "&kp F2"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+W",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "✕",
+    "caption": "Close Tab",
+    "combo": "C+W",
+    "tok": "LC(W)",
+    "layer": null,
     "src": "&kp LC(W)"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+Shift+T",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "↺",
+    "caption": "Reopen Tab",
+    "combo": "C+S+T",
+    "tok": "LC(LS(T))",
+    "layer": null,
     "src": "&kp LC(LS(T))"
    },
    {
@@ -1063,38 +1725,63 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "Refresh",
+    "combo": "",
+    "tok": "F5",
+    "layer": null,
     "src": "&kp F5"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+T",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "＋",
+    "caption": "New Tab",
+    "combo": "C+T",
+    "tok": "LC(T)",
+    "layer": null,
     "src": "&kp LC(T)"
    },
    {
     "beh": "mkp",
-    "main": "Left",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "■¦□¦□",
+    "caption": "Left Click",
+    "combo": "",
+    "tok": "LCLK",
+    "layer": null,
     "src": "&mkp LCLK"
    },
    {
     "beh": "mo",
-    "main": "MO 5",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "layer",
+    "icon": "▤",
+    "caption": "Scroll",
+    "combo": "",
+    "tok": "",
+    "layer": 5,
     "src": "&mo 5"
    },
    {
     "beh": "mo",
-    "main": "MO 4",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "layer",
+    "icon": "▤",
+    "caption": "SlowMouse",
+    "combo": "",
+    "tok": "",
+    "layer": 4,
     "src": "&mo 4"
    },
    {
@@ -1103,14 +1790,24 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "mkp",
-    "main": "Forward",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "↪",
+    "caption": "Forward",
+    "combo": "",
+    "tok": "MB5",
+    "layer": null,
     "src": "&mkp MB5"
    },
    {
@@ -1119,6 +1816,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1127,70 +1829,115 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
     "beh": "mkp",
-    "main": "Middle",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "□¦■¦□",
+    "caption": "Mid Click",
+    "combo": "",
+    "tok": "MCLK",
+    "layer": null,
     "src": "&mkp MCLK"
    },
    {
     "beh": "mkp",
-    "main": "Right",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "□¦□¦■",
+    "caption": "Right Click",
+    "combo": "",
+    "tok": "RCLK",
+    "layer": null,
     "src": "&mkp RCLK"
    },
    {
     "beh": "mo",
-    "main": "MO 5",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "layer",
+    "icon": "▤",
+    "caption": "Scroll",
+    "combo": "",
+    "tok": "",
+    "layer": 5,
     "src": "&mo 5"
    },
    {
     "beh": "mkp",
-    "main": "Left",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "■¦□¦□",
+    "caption": "Left Click",
+    "combo": "",
+    "tok": "LCLK",
+    "layer": null,
     "src": "&mkp LCLK"
    },
    {
     "beh": "mkp",
-    "main": "Back",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "↩",
+    "caption": "Back",
+    "combo": "",
+    "tok": "MB4",
+    "layer": null,
     "src": "&mkp MB4"
    },
    {
     "beh": "mkp",
-    "main": "Left",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "■¦□¦□",
+    "caption": "Left Click",
+    "combo": "",
+    "tok": "LCLK",
+    "layer": null,
     "src": "&mkp LCLK"
    },
    {
     "beh": "mkp",
-    "main": "Right",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "□¦□¦■",
+    "caption": "Right Click",
+    "combo": "",
+    "tok": "RCLK",
+    "layer": null,
     "src": "&mkp RCLK"
    },
    {
     "beh": "mkp",
-    "main": "Middle",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "□¦■¦□",
+    "caption": "Mid Click",
+    "combo": "",
+    "tok": "MCLK",
+    "layer": null,
     "src": "&mkp MCLK"
    },
    {
@@ -1199,14 +1946,24 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "mkp",
-    "main": "Back",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "↩",
+    "caption": "Back",
+    "combo": "",
+    "tok": "MB4",
+    "layer": null,
     "src": "&mkp MB4"
    },
    {
@@ -1215,6 +1972,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1223,6 +1985,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1231,38 +1998,63 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+Shift+Tab",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "⇤",
+    "caption": "Prev Tab",
+    "combo": "C+S+Tab",
+    "tok": "LC(LS(TAB))",
+    "layer": null,
     "src": "&kp LC(LS(TAB))"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+Tab",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "⇥",
+    "caption": "Next Tab",
+    "combo": "C+Tab",
+    "tok": "LC(TAB)",
+    "layer": null,
     "src": "&kp LC(TAB)"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+Shift+V",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "📋",
+    "caption": "Paste Plain",
+    "combo": "C+S+V",
+    "tok": "LC(LS(V))",
+    "layer": null,
     "src": "&kp LC(LS(V))"
    },
    {
     "beh": "mkp",
-    "main": "Forward",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "↪",
+    "caption": "Forward",
+    "combo": "",
+    "tok": "MB5",
+    "layer": null,
     "src": "&mkp MB5"
    },
    {
@@ -1271,6 +2063,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1279,6 +2076,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1287,6 +2089,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1295,6 +2102,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1303,6 +2115,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1311,6 +2128,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1319,14 +2141,24 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
     "beh": "kp",
-    "main": "L-Sh",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "⇧",
+    "caption": "Shift",
+    "combo": "",
+    "tok": "LSHFT",
+    "layer": null,
     "src": "&kp LSHFT"
    },
    {
@@ -1335,6 +2167,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1343,6 +2180,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1351,6 +2193,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1359,12 +2206,20 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    }
   ]
  },
  {
+  "idx": 4,
   "label": "SlowMouse",
+  "short": "SlowMouse",
+  "note": "AutoMouse와 키 배치가 완전히 동일합니다. 차이는 트랙볼 Snipe CPI 200 적용뿐입니다.",
   "keys": [
    {
     "beh": "trans",
@@ -1372,6 +2227,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1380,22 +2240,37 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "Rename",
+    "combo": "",
+    "tok": "F2",
+    "layer": null,
     "src": "&kp F2"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+W",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "✕",
+    "caption": "Close Tab",
+    "combo": "C+W",
+    "tok": "LC(W)",
+    "layer": null,
     "src": "&kp LC(W)"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+Shift+T",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "↺",
+    "caption": "Reopen Tab",
+    "combo": "C+S+T",
+    "tok": "LC(LS(T))",
+    "layer": null,
     "src": "&kp LC(LS(T))"
    },
    {
@@ -1404,38 +2279,63 @@
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "",
+    "caption": "Refresh",
+    "combo": "",
+    "tok": "F5",
+    "layer": null,
     "src": "&kp F5"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+T",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "＋",
+    "caption": "New Tab",
+    "combo": "C+T",
+    "tok": "LC(T)",
+    "layer": null,
     "src": "&kp LC(T)"
    },
    {
     "beh": "mkp",
-    "main": "Left",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "■¦□¦□",
+    "caption": "Left Click",
+    "combo": "",
+    "tok": "LCLK",
+    "layer": null,
     "src": "&mkp LCLK"
    },
    {
     "beh": "mo",
-    "main": "MO 5",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "layer",
+    "icon": "▤",
+    "caption": "Scroll",
+    "combo": "",
+    "tok": "",
+    "layer": 5,
     "src": "&mo 5"
    },
    {
     "beh": "mo",
-    "main": "MO 4",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "layer",
+    "icon": "▤",
+    "caption": "SlowMouse",
+    "combo": "",
+    "tok": "",
+    "layer": 4,
     "src": "&mo 4"
    },
    {
@@ -1444,14 +2344,24 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "mkp",
-    "main": "Forward",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "↪",
+    "caption": "Forward",
+    "combo": "",
+    "tok": "MB5",
+    "layer": null,
     "src": "&mkp MB5"
    },
    {
@@ -1460,6 +2370,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1468,70 +2383,115 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
     "beh": "mkp",
-    "main": "Middle",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "□¦■¦□",
+    "caption": "Mid Click",
+    "combo": "",
+    "tok": "MCLK",
+    "layer": null,
     "src": "&mkp MCLK"
    },
    {
     "beh": "mkp",
-    "main": "Right",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "□¦□¦■",
+    "caption": "Right Click",
+    "combo": "",
+    "tok": "RCLK",
+    "layer": null,
     "src": "&mkp RCLK"
    },
    {
     "beh": "mo",
-    "main": "MO 5",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "layer",
+    "icon": "▤",
+    "caption": "Scroll",
+    "combo": "",
+    "tok": "",
+    "layer": 5,
     "src": "&mo 5"
    },
    {
     "beh": "mkp",
-    "main": "Left",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "■¦□¦□",
+    "caption": "Left Click",
+    "combo": "",
+    "tok": "LCLK",
+    "layer": null,
     "src": "&mkp LCLK"
    },
    {
     "beh": "mkp",
-    "main": "Back",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "↩",
+    "caption": "Back",
+    "combo": "",
+    "tok": "MB4",
+    "layer": null,
     "src": "&mkp MB4"
    },
    {
     "beh": "mkp",
-    "main": "Left",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "■¦□¦□",
+    "caption": "Left Click",
+    "combo": "",
+    "tok": "LCLK",
+    "layer": null,
     "src": "&mkp LCLK"
    },
    {
     "beh": "mkp",
-    "main": "Right",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "□¦□¦■",
+    "caption": "Right Click",
+    "combo": "",
+    "tok": "RCLK",
+    "layer": null,
     "src": "&mkp RCLK"
    },
    {
     "beh": "mkp",
-    "main": "Middle",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "□¦■¦□",
+    "caption": "Mid Click",
+    "combo": "",
+    "tok": "MCLK",
+    "layer": null,
     "src": "&mkp MCLK"
    },
    {
@@ -1540,14 +2500,24 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
     "beh": "mkp",
-    "main": "Back",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "↩",
+    "caption": "Back",
+    "combo": "",
+    "tok": "MB4",
+    "layer": null,
     "src": "&mkp MB4"
    },
    {
@@ -1556,6 +2526,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1564,6 +2539,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1572,38 +2552,63 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+Shift+Tab",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "⇤",
+    "caption": "Prev Tab",
+    "combo": "C+S+Tab",
+    "tok": "LC(LS(TAB))",
+    "layer": null,
     "src": "&kp LC(LS(TAB))"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+Tab",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "⇥",
+    "caption": "Next Tab",
+    "combo": "C+Tab",
+    "tok": "LC(TAB)",
+    "layer": null,
     "src": "&kp LC(TAB)"
    },
    {
     "beh": "kp",
-    "main": "Ctrl+Shift+V",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "📋",
+    "caption": "Paste Plain",
+    "combo": "C+S+V",
+    "tok": "LC(LS(V))",
+    "layer": null,
     "src": "&kp LC(LS(V))"
    },
    {
     "beh": "mkp",
-    "main": "Forward",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "mouse",
+    "icon": "↪",
+    "caption": "Forward",
+    "combo": "",
+    "tok": "MB5",
+    "layer": null,
     "src": "&mkp MB5"
    },
    {
@@ -1612,6 +2617,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1620,6 +2630,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1628,6 +2643,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1636,6 +2656,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1644,6 +2669,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1652,6 +2682,11 @@
     "hold": "",
     "shift": "",
     "kind": "none",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&none"
    },
    {
@@ -1660,14 +2695,24 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
     "beh": "kp",
-    "main": "L-Sh",
+    "main": "",
     "hold": "",
     "shift": "",
     "kind": "key",
+    "icon": "⇧",
+    "caption": "Shift",
+    "combo": "",
+    "tok": "LSHFT",
+    "layer": null,
     "src": "&kp LSHFT"
    },
    {
@@ -1676,6 +2721,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1684,6 +2734,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1692,6 +2747,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1700,12 +2760,20 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    }
   ]
  },
  {
+  "idx": 5,
   "label": "ScrollOnly",
+  "short": "Scroll",
+  "note": "모든 키가 trans입니다. 트랙볼 스크롤 전용 레이어입니다.",
   "keys": [
    {
     "beh": "trans",
@@ -1713,6 +2781,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1721,6 +2794,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1729,6 +2807,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1737,6 +2820,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1745,6 +2833,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1753,6 +2846,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1761,6 +2859,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1769,6 +2872,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1777,6 +2885,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1785,6 +2898,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1793,6 +2911,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1801,6 +2924,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1809,6 +2937,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1817,6 +2950,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1825,6 +2963,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1833,6 +2976,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1841,6 +2989,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1849,6 +3002,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1857,6 +3015,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1865,6 +3028,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1873,6 +3041,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1881,6 +3054,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1889,6 +3067,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1897,6 +3080,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1905,6 +3093,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1913,6 +3106,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1921,6 +3119,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1929,6 +3132,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1937,6 +3145,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1945,6 +3158,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1953,6 +3171,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1961,6 +3184,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1969,6 +3197,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1977,6 +3210,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1985,6 +3223,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -1993,6 +3236,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -2001,6 +3249,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -2009,6 +3262,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -2017,6 +3275,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -2025,6 +3288,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -2033,6 +3301,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    },
    {
@@ -2041,6 +3314,11 @@
     "hold": "",
     "shift": "",
     "kind": "trans",
+    "icon": "",
+    "caption": "",
+    "combo": "",
+    "tok": "",
+    "layer": null,
     "src": "&trans"
    }
   ]
