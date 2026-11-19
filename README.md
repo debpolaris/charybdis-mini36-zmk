@@ -100,7 +100,6 @@ GitHub Actions도 같은 경로를 씁니다(`.github/workflows/build.yml`): Rel
 
 ```bash
 python3 tools/keymap_diagram.py config/charybdis.keymap docs/keymap-layers.html docs/keymap-layers.json
-cp docs/keymap-layers.html docs/keymap.html
 ```
 
 그림이 필요하면 HTML을 브라우저로 열어 전체 페이지를 이미지로 저장하면 됩니다.

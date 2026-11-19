@@ -4,7 +4,7 @@
 
 - `keymap-layers.png` — Base / Nav·Symbol / FN·MID·BT / AutoMouse / SlowMouse / ScrollOnly 전체
 - `keymap-layers.html` — 같은 내용의 브라우저용 ( 확대·축소 가능 )
-- `keymap.html` — `keymap-layers.html` 의 사본(이 저장소의 진입점 이름)
+- `keymap.old.html` — 교체 전 손으로 그려 펌웨어와 어긋나 있던 옛 그림(아카이브)
 - `keymap-layers.json` — 위 그림의 원 데이터(키별 tap/hold/shift/아이콘/설명/레이어)
 
 그림은 `config/charybdis.keymap` 을 **파싱해서** 생성했습니다. 손으로 그린 키맵
@@ -32,7 +32,6 @@
 
 ```bash
 python3 ../tools/keymap_diagram.py ../config/charybdis.keymap keymap-layers.html keymap-layers.json
-cp keymap-layers.html keymap.html
 ```
 
 PNG이 필요하면 `keymap-layers.html` 을 브라우저(Edge/Chrome)에서 열고 전체 페이지를
@@ -46,7 +45,7 @@ msedge.exe --headless=new --disable-gpu --hide-scrollbars --force-device-scale-f
 
 Python 표준 라이브러리만 사용합니다(별도 패키지 불필요).
 
-## 참고: 예전 `keymap.html` 과 달라던 부분
+## 참고: 옛 그림(`keymap.old.html`)과 달라던 부분
 
 교체 전에 있던 손으로 그린 그림은 다음이 실제 펌웨어와 달랐습니다.
 

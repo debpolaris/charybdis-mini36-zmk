@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Charybdis Keymap Visualization - All Layers</title>
+<style>
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1e1e1e; color: #e0e0e0; padding: 30px; display: flex; flex-direction: column; align-items: center; }
+  .layer { background: #2a2a2a; border-radius: 12px; padding: 25px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: max-content; }
+  .layer-title { text-align: center; color: #4dc0b5; font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; border-bottom: 2px solid #333; padding-bottom: 10px; }
+  .row { display: flex; justify-content: center; margin-bottom: 8px; gap: 40px; }
+  .half { display: flex; gap: 8px; }
+  
+  .key { width: 65px; height: 65px; background: #3d3d3d; border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; font-size: 12px; text-align: center; box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 2px 4px rgba(0,0,0,0.4); transition: transform 0.1s; }
+  .key:hover { transform: scale(1.05); background: #4a4a4a; }
+  
+  .key.hrm { border: 1px solid #f2c94c; color: #f2c94c; }
+  .key.thumb { background: #2c5282; border-color: #2b6cb0; }
+  .key.trans { opacity: 0.5; background: #2a2a2a; box-shadow: none; border: 1px dashed #444; }
+  .key.none { opacity: 0.2; }
+  .key.bt { border: 1px solid #2d9cdb; color: #2d9cdb; }
+  .key.media { border: 1px solid #9b51e0; color: #bb6bd9; }
+  .key.mouse { border: 1px solid #27ae60; color: #2ecc71; }
+
+  .key-main { font-weight: bold; font-size: 18px; margin-bottom: 3px; }
+  .key-sub { font-size: 12px; color: #a0aec0; }
+  .key-shift { position: absolute; top: 4px; right: 6px; font-size: 12px; color: #ff9e80; font-weight: bold; }
+  
+  .thumb-row { display: flex; justify-content: center; gap: 120px; margin-top: 15px; }
+</style>
+</head>
+<body>
+
+<!-- LAYER 0 -->
+<div class="layer">
+  <div class="layer-title">LAYER 0 : Base</div>
+  <div class="row">
+    <div class="half">
+      <div class="key"><span class="key-shift">PrtS</span><span class="key-main">Copy</span></div>
+      <div class="key"><span class="key-main">Q</span></div><div class="key"><span class="key-main">W</span></div><div class="key"><span class="key-main">E</span></div><div class="key"><span class="key-main">R</span></div><div class="key"><span class="key-main">T</span></div>
+    </div>
+    <div class="half">
+      <div class="key"><span class="key-main">Y</span></div><div class="key"><span class="key-main">U</span></div><div class="key"><span class="key-main">I</span></div><div class="key"><span class="key-main">O</span></div><div class="key"><span class="key-main">P</span></div>
+      <div class="key"><span class="key-shift">C+A+D</span><span class="key-main">DEL</span></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="half">
+      <div class="key"><span class="key-shift">Tab</span><span class="key-main">Lang</span></div>
+      <div class="key hrm"><span class="key-main">A</span><span class="key-sub">GUI</span></div>
+      <div class="key hrm"><span class="key-main">S</span><span class="key-sub">ALT</span></div>
+      <div class="key hrm"><span class="key-main">D</span><span class="key-sub">CTRL</span></div>
+      <div class="key hrm"><span class="key-main">F</span><span class="key-sub">SHIFT</span></div>
+      <div class="key"><span class="key-main">G</span></div>
+    </div>
+    <div class="half">
+      <div class="key"><span class="key-main">H</span></div>
+      <div class="key hrm"><span class="key-main">J</span><span class="key-sub">SHIFT</span></div>
+      <div class="key hrm"><span class="key-main">K</span><span class="key-sub">CTRL</span></div>
+      <div class="key hrm"><span class="key-main">L</span><span class="key-sub">ALT</span></div>
+      <div class="key hrm"><span class="key-shift">:</span><span class="key-main">;</span><span class="key-sub">GUI</span></div>
+      <div class="key"><span class="key-shift">"</span><span class="key-main">'</span></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="half">
+      <div class="key"><span class="key-sub">CapsWord</span></div>
+      <div class="key"><span class="key-main">Z</span></div><div class="key"><span class="key-main">X</span></div><div class="key"><span class="key-main">C</span></div><div class="key"><span class="key-main">V</span></div><div class="key"><span class="key-main">B</span></div>
+    </div>
+    <div class="half">
+      <div class="key"><span class="key-main">N</span></div><div class="key"><span class="key-main">M</span></div>
+      <div class="key"><span class="key-shift">&lt;</span><span class="key-main">,</span></div>
+      <div class="key"><span class="key-shift">&gt;</span><span class="key-main">.</span></div>
+      <div class="key"><span class="key-shift">?</span><span class="key-main">/</span></div>
+      <div class="key"><span class="key-shift">|</span><span class="key-main">\</span></div>
+    </div>
+  </div>
+  <div class="thumb-row">
+    <div class="half">
+      <div class="key thumb"><span class="key-main">ESC</span><span class="key-sub">L2</span></div>
+      <div class="key thumb"><span class="key-main">SPACE</span><span class="key-sub">L1</span></div>
+      <div class="key thumb"><span class="key-main">Paste</span><span class="key-sub">CTRL</span></div>
+    </div>
+    <div class="half">
+      <div class="key thumb"><span class="key-main">ENTER</span><span class="key-sub">L2</span></div>
+      <div class="key thumb"><span class="key-main">BSPC</span><span class="key-sub">L1</span></div>
+      <div class="key thumb"><span class="key-main">MO 5</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- LAYER 1 -->
+<div class="layer">
+  <div class="layer-title">LAYER 1 : Nav/Symbol</div>
+  <div class="row">
+    <div class="half">
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key"><span class="key-shift">!</span><span class="key-main">1</span></div>
+      <div class="key"><span class="key-shift">@</span><span class="key-main">2</span></div>
+      <div class="key"><span class="key-shift">#</span><span class="key-main">3</span></div>
+      <div class="key"><span class="key-shift">$</span><span class="key-main">4</span></div>
+      <div class="key"><span class="key-shift">%</span><span class="key-main">5</span></div>
+    </div>
+    <div class="half">
+      <div class="key"><span class="key-shift">^</span><span class="key-main">6</span></div>
+      <div class="key"><span class="key-shift">&amp;</span><span class="key-main">7</span></div>
+      <div class="key"><span class="key-shift">*</span><span class="key-main">8</span></div>
+      <div class="key"><span class="key-shift">(</span><span class="key-main">9</span></div>
+      <div class="key"><span class="key-shift">)</span><span class="key-main">0</span></div>
+      <div class="key"><span class="key-main">DEL</span></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="half">
+      <div class="key"><span class="key-shift">~</span><span class="key-main">`</span></div>
+      <div class="key"><span class="key-main">{</span></div>
+      <div class="key"><span class="key-main">}</span></div>
+      <div class="key"><span class="key-main">(</span></div>
+      <div class="key"><span class="key-main">)</span></div>
+      <div class="key"><span class="key-shift">~</span><span class="key-main">=</span></div>
+    </div>
+    <div class="half">
+      <div class="key"><span class="key-shift">HOME</span><span class="key-main">←</span></div>
+      <div class="key"><span class="key-shift">PGDN</span><span class="key-main">↓</span></div>
+      <div class="key"><span class="key-shift">PGUP</span><span class="key-main">↑</span></div>
+      <div class="key"><span class="key-shift">END</span><span class="key-main">→</span></div>
+      <div class="key"><span class="key-main">*</span></div>
+      <div class="key"><span class="key-main">#</span></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="half">
+      <div class="key"><span class="key-main">!</span></div>
+      <div class="key"><span class="key-main">[</span></div>
+      <div class="key"><span class="key-main">]</span></div>
+      <div class="key"><span class="key-main">_</span></div>
+      <div class="key"><span class="key-main">-</span></div>
+      <div class="key"><span class="key-main">+</span></div>
+    </div>
+    <div class="half">
+      <div class="key"><span class="key-main">@</span></div>
+      <div class="key"><span class="key-main">$</span></div>
+      <div class="key"><span class="key-main">&amp;</span></div>
+      <div class="key"><span class="key-main">%</span></div>
+      <div class="key"><span class="key-main">^</span></div>
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+    </div>
+  </div>
+  <div class="thumb-row">
+    <div class="half">
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+    </div>
+    <div class="half">
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- LAYER 2 -->
+<div class="layer">
+  <div class="layer-title">LAYER 2 : FN / Media / Bluetooth</div>
+  <div class="row">
+    <div class="half">
+      <div class="key"><span class="key-main">F11</span></div><div class="key"><span class="key-main">F1</span></div><div class="key"><span class="key-main">F2</span></div><div class="key"><span class="key-main">F3</span></div><div class="key"><span class="key-main">F4</span></div><div class="key"><span class="key-main">F5</span></div>
+    </div>
+    <div class="half">
+      <div class="key"><span class="key-main">F6</span></div><div class="key"><span class="key-main">F7</span></div><div class="key"><span class="key-main">F8</span></div><div class="key"><span class="key-main">F9</span></div><div class="key"><span class="key-main">F10</span></div><div class="key"><span class="key-main">F12</span></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="half">
+      <div class="key bt"><span class="key-main">↹</span><span class="key-sub">Swich Devices</span></div><div class="key none"></div><div class="key none"></div><div class="key none"></div><div class="key none"></div><div class="key none"></div>
+    </div>
+    <div class="half">
+      <div class="key media"><span class="key-main">🔇</span><span class="key-sub">Mute</span></div>
+      <div class="key media"><span class="key-main">⏵❘❘</span><span class="key-sub">PlayPause</span></div>
+      <div class="key media"><span class="key-main">🔉</span><span class="key-sub">Vol-</span></div>
+      <div class="key media"><span class="key-main">🔊</span><span class="key-sub">Vol+</span></div>
+      <div class="key none"></div><div class="key none"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="half">
+      <div class="key none"></div>
+      <div class="key bt"><span class="key-main">🔵⁰</span><span class="key-sub">BT 0</span></div>
+      <div class="key bt"><span class="key-main">🔵¹</span><span class="key-sub">BT 1</span></div>
+      <div class="key bt"><span class="key-main">🔵²</span><span class="key-sub">BT 2</span></div>
+      <div class="key bt"><span class="key-main">🔵³</span><span class="key-sub">BT 3</span></div>
+      <div class="key bt"><span class="key-main">🔵⁴</span><span class="key-sub">BT 4</span></div>
+    </div>
+    <div class="half">
+      <div class="key media"><span class="key-main">⏮</span><span class="key-sub">Prev</span></div>
+      <div class="key media"><span class="key-main">⯬</span><span class="key-sub">Rwd</span></div>
+      <div class="key media"><span class="key-main">⯮</span><span class="key-sub">FFwd</span></div>
+      <div class="key media"><span class="key-main">⏭</span><span class="key-sub">Next</span></div>
+      <div class="key none"></div><div class="key bt"><span class="key-main">🛠️↪️</span><span class="key-sub">BootLoader</span></div>
+    </div>
+  </div>
+  <div class="thumb-row">
+    <div class="half">
+      <div class="key trans"><span class="key-main">TRANS</span></div><div class="key none"></div><div class="key bt"><span class="key-main">🔵❌</span><span class="key-sub">Clear All BT</span></div>
+    </div>
+    <div class="half">
+      <div class="key none"></div><div class="key none"></div><div class="key bt"><span class="key-main">🔵🔄</span><span class="key-sub">Clear BT</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- LAYER 3 - Updated -->
+<div class="layer">
+  <div class="layer-title">LAYER 3 : AutoMouse (Shortcuts & Clicking)</div>
+  <div class="row">
+    <div class="half">
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key"><span class="key-main">F2</span><span class="key-sub">Rename</span></div>
+      <div class="key"><span class="key-shift">C+W</span><span class="key-sub">Close</span></div>
+      <div class="key"><span class="key-shift">C+S+T</span><span class="key-sub">Reopen</span></div>
+      <div class="key"><span class="key-main">F5</span><span class="key-sub">Refresh</span></div>
+      <div class="key"><span class="key-shift">C+T</span><span class="key-sub">New Tab</span></div>
+    </div>
+    <div class="half">
+      <div class="key mouse"><span class="key-main">■¦□¦□🖱️</span><span class="key-sub">Left Click</span></div>
+      <div class="key thumb"><span class="key-main">Scroll</span><span class="key-sub"></span></div>
+      <div class="key thumb"><span class="key-main">Slow</span><span class="key-sub">Move</span></div>
+      <div class="key none"></div>
+      <div class="key mouse"><span class="key-main">↪</span><span class="key-sub">Forward</span></div>
+      <div class="key trans"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="half">
+      <div class="key trans"></div>
+      <div class="key mouse"><span class="key-main">□¦■¦□🖱️</span><span class="key-sub">Mid Click</span></div>
+      <div class="key mouse"><span class="key-main">□¦□¦■🖱️</span><span class="key-sub">Right Click</span></div>
+      <div class="key thumb"><span class="key-main">Scroll</span><span class="key-sub"></span></div>
+      <div class="key mouse"><span class="key-main">■¦□¦□🖱️</span><span class="key-sub">Left Click</span></div>
+      <div class="key mouse"><span class="key-main">↩</span><span class="key-sub">Back</span></div>
+    </div>
+    <div class="half">
+      <div class="key mouse"><span class="key-main">■¦□¦□🖱️</span><span class="key-sub">Left Click</span></div>
+      <div class="key mouse"><span class="key-main">□¦□¦■🖱️</span><span class="key-sub">Right Click</span></div>
+      <div class="key mouse"><span class="key-main">□¦■¦□🖱️</span><span class="key-sub">Mid Click</span></div>
+      <div class="key none"></div>
+      <div class="key mouse"><span class="key-main">↩</span><span class="key-sub">Back</span></div>
+      <div class="key none"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="half">
+      <div class="key none"></div>
+      <div class="key trans"></div>
+      <div class="key"><span class="key-shift">C+S+Tab</span><span class="key-main">↤</span><span class="key-sub">Prev Tab</span></div>
+      <div class="key"><span class="key-shift">C+Tab</span><span class="key-main">↦</span><span class="key-sub">Next Tab</span></div>
+      <div class="key"><span class="key-shift">C+S+V</span><span class="key-main"></span><span class="key-sub">Paste Plain</span></div>
+      <div class="key mouse"><span class="key-main">↪</span><span class="key-sub">Forward</span></div>
+    </div>
+    <div class="half">
+      <div class="key none"></div><div class="key none"></div><div class="key none"></div><div class="key none"></div><div class="key none"></div><div class="key none"></div>
+    </div>
+  </div>
+  <div class="thumb-row">
+    <div class="half">
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key"><span class="key-main">LSHFT</span></div>
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+    </div>
+    <div class="half">
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+      <div class="key trans"><span class="key-main">TRANS</span></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
